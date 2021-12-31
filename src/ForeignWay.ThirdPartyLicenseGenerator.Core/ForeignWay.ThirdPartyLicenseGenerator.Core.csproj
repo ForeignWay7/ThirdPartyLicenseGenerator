@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <BaseOutputPath>..\..\bin\</BaseOutputPath>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\key.snk</AssemblyOriginatorKeyFile>
+    <RootNamespace>ForeignWay.ThirdPartyLicenseGenerator</RootNamespace>
+    <AssemblyName>ThirdPartyLicenseGenerator</AssemblyName>
+    <Authors>ForeignWay</Authors>
+    <Company>ForeignWay</Company>
+    <Description>An open source Library that searches for package references among solution projects and generates an html file out of them.</Description>
+    <NeutralLanguage>en</NeutralLanguage>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>license;third-party;nuget;reference</PackageTags>
+    <PackageProjectUrl>https://github.com/ForeignWay7/ThirdPartyLicenseGenerator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ForeignWay7/ThirdPartyLicenseGenerator</RepositoryUrl>
+    <PackageIcon>ThirdPartyLicenseGenerator.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="ThirdPartyLicenseGenerator.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
+</Project>
